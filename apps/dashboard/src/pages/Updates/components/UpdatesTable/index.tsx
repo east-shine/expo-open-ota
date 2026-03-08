@@ -141,6 +141,7 @@ export const UpdatesTable = ({
           },
         ]}
         data={data ?? []}
+        defaultSorting={[{ id: 'createdAt', desc: true }]}
         onRowClick={row => {
           sheetRef?.current?.openSheet(row);
         }}
